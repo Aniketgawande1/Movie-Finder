@@ -1,15 +1,16 @@
 import { useState } from 'react'
+import './components/MovieApp.jsx'
 import './App.css'
-import MovieCard from './componets/MovieCard'
 
 function App() {
- 
+  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <MovieCard/>
-    </>
+    <div className='App'>
+      <MovieApp></MovieApp>
+    </div>  
+
   )
 }
 
-export default App;
+export default App
